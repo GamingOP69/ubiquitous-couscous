@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: CHAMBER 4 :: THE TAPE</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+<script src="js/tape.js" defer></script>
+</head>
+<body class="term" data-chamber="4">
+<noscript><p class="warn">JAVASCRIPT REQUIRED TO MATERIALIZE THE TAPE.</p></noscript>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // CHAMBER 4 OF 8 &mdash; THE TAPE</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+<pre class="rule">========================================================================</pre>
+
+<p class="lore">You named the Russian buzzer. Correct. Deck B holds one cassette from the
+final week: the operator keying his own station ID, then six groups of figures, sent by
+hand. He was old school. He trusted dots and dashes more than he trusted men.</p>
+<p class="lore warn">MAINTENANCE FLAG: Deck B's pitch control is broken. <b>The label lies.</b>
+The capstan runs at the true rate; the header was written by a machine that believed a
+different one. Trust the math, not the label. And remember how the operator counted:
+he started at one, and the alphabet was his ladder.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" class="spec">
+<tr><th colspan="2" align="left">TAPE DECK B &mdash; CASSETTE 97-11-02</th></tr>
+<tr><td>CONTENT</td><td>station ID, then six two-figure groups, hand-keyed</td></tr>
+<tr><td>ENCODING</td><td>PCM, mono. metadata present (LIST/INFO).</td></tr>
+<tr><td>PITCH</td><td class="warn">CALIBRATION FAULT &mdash; see maintenance log, 1996</td></tr>
+</table>
+
+<p>
+<audio id="tapeAudio" controls preload="none"></audio><br>
+<a id="dlWav" href="#" download="tape.wav">[ DOWNLOAD tape.wav ]</a>
+&nbsp; <span class="dim" id="tapeInfo"></span>
+</p>
+
+<pre class="rule">------------------------------------------------------------------------</pre>
+<p class="dim">Transcribe. Convert. Climb the ladder from A. The chamber beyond is a machine.</p>
+
+<form class="dial" action="#" method="get">
+<label for="dial">ENTER WORD &#9656;</label>
+<input id="dial" name="word" type="text" autocomplete="off" spellcheck="false" maxlength="40">
+<button type="submit">TUNE</button>
+<span class="dialStatus"></span>
+</form>
+<p class="dim">CHAMBERS RECOVERED: <span id="progress">? / 8</span> &middot; <span class="blink">&#9646;</span></p>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Creator-only kit: full solutions + verifier. NEVER deploy these.
+docs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

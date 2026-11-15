@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: SILENCE</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+<script src="js/victory.js" defer></script>
+</head>
+<body class="term victory" data-chamber="9">
+<noscript><p class="warn">JAVASCRIPT REQUIRED FOR THE LOG AND THE CERTIFICATE.</p></noscript>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // TRANSMISSION COMPLETE</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+
+<pre class="ascii">
+  _  __      _____    _   _    _    _      ______   _____  _   _
+ | |/ /     |___  |  | | | |  / \  | |    / ___\ \ / / _ \| \ | |
+ | ' / _____   / /   | |_| | / _ \ | |   | |    \ V / | | |  \| |
+ | . \|_____| / /    |  _  |/ ___ \| |___| |___  | || |_| | |\  |
+ |_|\_\      /_/     |_| |_/_/   \_\______\____| |_| \___/|_| \_|
+                S  I  L  E  N  C  E     A  C  H  I  E  V  E  D
+</pre>
+
+<p class="lore">The final word was spoken. The master crystal is out. The carrier is down.
+Station K-7 HALCYON is silent as of this moment, and the archive acknowledges you as
+the operator who closed it.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" class="spec">
+<tr><th colspan="2" align="left">OPERATOR RECORD</th></tr>
+<tr><td>CHAMBERS</td><td>8 / 8 RECOVERED</td></tr>
+<tr><td>ELAPSED</td><td><span id="elapsed">--</span></td></tr>
+<tr><td>DIAL ATTEMPTS</td><td><span id="attempts">--</span></td></tr>
+<tr><td>SHUTDOWN KEY</td><td><b>HALCYON-1997</b></td></tr>
+</table>
+
+<p>
+<button id="playFinal">PLAY LAST TRANSMISSION</button>
+<span id="finalStatus" class="dim">carrier ready.</span>
+</p>
+<p><a id="dlCert" href="#" download="k7_operator_certificate.txt">[ DOWNLOAD OPERATOR CERTIFICATE ]</a></p>
+
+<hr>
+<h3 class="term">OPERATOR LOG (GUESTBOOK)</h3>
+<p class="dim">Sign the log. Entries live in this browser only, as logs should.</p>
+<form id="logForm" action="#">
+<input id="logName" type="text" maxlength="24" placeholder="CALLSIGN" autocomplete="off">
+<input id="logMsg" type="text" maxlength="140" placeholder="MESSAGE" autocomplete="off" size="40">
+<button type="submit">SIGN</button>
+</form>
+<table border="1" cellpadding="5" cellspacing="0" width="100%" class="spec" id="logTable">
+<tr><th align="left">DATE</th><th align="left">CALLSIGN</th><th align="left">MESSAGE</th><th></th></tr>
+</table>
+
+<hr>
+<p class="dim">
+<a href="#" id="resetArchive">[ RESET ARCHIVE &mdash; BURN THE JOURNAL ]</a>
+&nbsp;&middot;&nbsp; the ring is broken. it has been broken since 1997.
+</p>
+<pre class="rule">========================================================================</pre>
+<p class="dim blink">&#9646; NO CARRIER</p>
+</body>
+</html>

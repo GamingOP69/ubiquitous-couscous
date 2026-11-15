@@ -1,0 +1,89 @@
+/* K-7 HALCYON — period stylesheet. No flexbox. No grid. Tables forever. */
+
+html { scrollbar-color: #1f7a3d #050805; scrollbar-width: auto; }
+body { margin: 0; padding: 12px; }
+body.term {
+  background: #050805; color: #39ff6a;
+  font-family: "Courier New", Courier, monospace; font-size: 15px; line-height: 1.5;
+}
+body.lobby {
+  background: #c0c0c0; color: #000000;
+  font-family: "Times New Roman", Times, serif; font-size: 16px;
+  scrollbar-color: #808080 #c0c0c0;
+}
+
+/* links — era-correct */
+body.lobby a:link { color: #0000ee; }
+body.lobby a:visited { color: #551a8b; }
+body.term a:link { color: #ffe866; }
+body.term a:visited { color: #bb99ff; }
+a:hover { color: #ff4444; }
+a.navlink:link, a.navlink:visited { color: #ffffff; }
+
+/* chrome */
+body.term .hdr { background: #0f1a0f; border-bottom: 2px ridge #1f7a3d; }
+body.term .hdr td { color: #39ff6a; }
+body.lobby .frame { border: 3px ridge #ffffff; background: #c0c0c0; }
+.ticker { background: #000080; color: #ffff00; font-family: Arial, sans-serif;
+  font-size: 12px; padding: 3px 0; border-top: 1px solid #fff; border-bottom: 1px solid #808080; }
+
+h1.lobby { font-size: 28px; color: #000080; margin: 8px 0; }
+h2.lobby { font-size: 20px; color: #800000; border-bottom: 1px solid #808080; margin: 10px 0 6px; }
+h3.term { color: #ffb000; font-size: 15px; margin: 14px 0 4px; letter-spacing: 1px; }
+
+p.lore { max-width: 70em; }
+.dim { color: #1f7a3d; font-size: 13px; }
+body.lobby .dim { color: #404040; }
+.warn { color: #ff4444; }
+body.lobby .warn { color: #cc0000; font-weight: bold; }
+.card { background: #ffffcc; border: 1px dashed #808000; font-size: 15px; }
+
+pre.rule { color: #1f7a3d; margin: 8px 0; overflow-x: auto; }
+pre.cipher {
+  background: #0f1a0f; border: 1px dashed #1f7a3d; color: #55ddff;
+  padding: 12px; font-size: 17px; letter-spacing: 2px; overflow-x: auto; white-space: pre;
+}
+pre.ascii { color: #ffb000; font-size: 12px; line-height: 1.15; overflow-x: auto; }
+body.victory pre.ascii { color: #39ff6a; }
+
+table.spec, table.rec { border-color: #1f7a3d; background: #0a0f0a; }
+table.spec th { background: #0f1a0f; color: #ffb000; }
+table.spec td { color: #39ff6a; }
+body.lobby table.rec { background: #ffffff; border-color: #808080; }
+body.lobby table.rec td { color: #000; }
+
+/* dial */
+form.dial { margin: 12px 0; padding: 10px; border: 2px ridge #1f7a3d; background: #0f1a0f; }
+body.lobby form.dial { border-color: #ffffff; background: #d8d8d8; }
+form.dial input[type=text], #logForm input {
+  font-family: "Courier New", monospace; font-size: 16px;
+  background: #050805; color: #39ff6a; border: 2px inset #1f7a3d; padding: 4px 6px;
+}
+body.lobby form.dial input[type=text] { background: #ffffff; color: #000; border-color: #808080; }
+button {
+  font-family: "Courier New", monospace; font-size: 14px; font-weight: bold;
+  background: #1f7a3d; color: #050805; border: 2px outset #39ff6a; padding: 4px 12px; cursor: pointer;
+}
+body.lobby button { background: #c0c0c0; color: #000; border-color: #fff; }
+button:active { border-style: inset; }
+.dialStatus { color: #ffb000; margin-left: 8px; }
+
+/* counter + blink */
+.odometer { font-family: "Courier New", monospace; background: #000; color: #39ff6a;
+  border: 2px inset #808080; padding: 2px 6px; letter-spacing: 4px; font-size: 16px; }
+@keyframes k7blink { 50% { opacity: 0; } }
+.blink { animation: k7blink 1s step-end infinite; color: #ffb000; }
+
+/* scrollbars in the archive's own colors */
+::-webkit-scrollbar { width: 14px; height: 14px; }
+::-webkit-scrollbar-track { background: #050805; border-left: 1px solid #1f7a3d; }
+::-webkit-scrollbar-thumb { background: #1f7a3d; border: 1px solid #39ff6a; }
+::-webkit-scrollbar-thumb:hover { background: #39ff6a; }
+body.lobby ::-webkit-scrollbar-track { background: #c0c0c0; border-left: 1px solid #808080; }
+body.lobby ::-webkit-scrollbar-thumb { background: #a0a0a0; border: 2px outset #ffffff; }
+
+img { image-rendering: pixelated; }
+audio { width: 320px; max-width: 100%; }
+hr { border: 0; border-top: 1px solid #1f7a3d; margin: 14px 0; }
+body.lobby hr { border-top: 1px solid #808080; }
+#logForm input { margin-right: 6px; margin-bottom: 6px; }

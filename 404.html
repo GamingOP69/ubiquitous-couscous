@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: DEAD AIR</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", function () {
+  var p = decodeURIComponent(location.pathname || "");
+  var el = document.getElementById("freq");
+  if (el) el.textContent = p.replace(/^\//, "").replace(/\.html$/i, "") || "???";
+  var back = document.getElementById("back");
+  if (back && document.referrer && document.referrer.indexOf(location.host) !== -1) {
+    back.href = document.referrer;
+  }
+  console.log("[K7] dead air logged. the archive does not forgive guesses; it merely ignores them.");
+});
+</script>
+</head>
+<body class="term deadair">
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // DEAD AIR</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+<pre class="rule">========================================================================</pre>
+<pre class="ascii warn">
+  ____  _____    _    ____      _    ___ ____
+ |  _ \| ____|  / \  |  _ \    / \  |_ _|  _ \
+ | | | |  _|   / _ \ | | | |  / _ \  | || |_) |
+ | |_| | |___ / ___ \| |_| | / ___ \ | ||  _ <
+ |____/|_____/_/   \_\____/ /_/   \_\___|_| \_\
+</pre>
+<p class="lore">The dial settled on <b class="warn"><span id="freq">???</span></b> and found
+nothing. No carrier. No voice. No chamber. That frequency carries only the hiss of the
+band and the disappointment of the Society.</p>
+<p class="lore">Remember the Operator's Card: answers are <b>lowercase</b>, letters and
+digits only, no spaces, no punctuation. If your answer contained a sentence, you were
+meant to extract a word. If it contained a word you have not <i>proved</i>, you are
+guessing, and the archive does not negotiate with guessers.</p>
+<p><a id="back" href="index.html">[ RETURN TO LAST KNOWN CHAMBER ]</a></p>
+<pre class="rule">------------------------------------------------------------------------</pre>
+<form class="dial" action="#" method="get">
+<label for="dial">RE-TUNE &#9656;</label>
+<input id="dial" name="word" type="text" autocomplete="off" spellcheck="false" maxlength="40">
+<button type="submit">TUNE</button>
+<span class="dialStatus"></span>
+</form>
+<p class="dim">CHAMBERS RECOVERED: <span id="progress">? / 8</span></p>
+</body>
+</html>

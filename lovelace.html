@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: CHAMBER 7 :: NOTE G</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("[K7] analytical engine interface loaded. note G attached.");
+  console.log("[K7] boot trace: KF-7:N");
+});
+</script>
+</head>
+<body class="term" data-chamber="7">
+<noscript><p class="warn">JAVASCRIPT REQUIRED FOR THE DIAL.</p></noscript>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // CHAMBER 7 OF 8 &mdash; NOTE G</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+<pre class="rule">========================================================================</pre>
+
+<p class="lore">The pad broke because he reused it. You broke it because you are not him.
+This chamber honors the first person to understand that a machine could be told to
+compute anything at all &mdash; including the sequence below. Her Note G, 1843, contains
+the first published program. It computed Bernoulli numbers. So will you.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" class="spec" width="100%">
+<tr><th colspan="2" align="left">TASK ORDER 97-11-03 / ANALYTICAL ENGINE</th></tr>
+<tr><td>SEQUENCE</td><td>Bernoulli numbers B<sub>n</sub>, with B<sub>2</sub> = 1/6,
+B<sub>4</sub> = &minus;1/30 (the even-index convention; odd terms beyond B<sub>1</sub> vanish).</td></tr>
+<tr><td>CONDITION</td><td>Find the <b>first even-indexed</b> Bernoulli number whose numerator,
+in lowest terms, has <b>absolute value greater than 100</b>.</td></tr>
+<tr><td>ANSWER FORMAT</td><td>|numerator| written immediately followed by the denominator,
+no separators, no sign. Example: if the number were &minus;1/30 you would enter
+<b>130</b>. It is not &minus;1/30.</td></tr>
+<tr><td>METHOD</td><td>Any exact method. Floating point will lie to you. The engine of 1843
+used fractions; so should yours.</td></tr>
+</table>
+
+<p class="lore">The numerator you find is famous beyond this archive. Number theorists
+call it the first irregular prime. If your answer does not make a historian smile,
+your arithmetic is wrong.</p>
+
+<pre class="rule">------------------------------------------------------------------------</pre>
+<form class="dial" action="#" method="get">
+<label for="dial">ENTER NUMBER &#9656;</label>
+<input id="dial" name="word" type="text" autocomplete="off" spellcheck="false" maxlength="40">
+<button type="submit">TUNE</button>
+<span class="dialStatus"></span>
+</form>
+<p class="dim">CHAMBERS RECOVERED: <span id="progress">? / 8</span> &middot; <span class="blink">&#9646;</span></p>
+</body>
+</html>

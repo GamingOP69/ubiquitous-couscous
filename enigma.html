@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: CHAMBER 5 :: THE MACHINE</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+</head>
+<body class="term" data-chamber="5">
+<noscript><p class="warn">JAVASCRIPT REQUIRED FOR THE DIAL.</p></noscript>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // CHAMBER 5 OF 8 &mdash; THE MACHINE</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+<pre class="rule">========================================================================</pre>
+
+<p class="lore">Not the famous rotor machine &mdash; its colder cousin. A linear engine.
+The operator's notes call it <i>&quot;the grid that multiplies.&quot;</i> Letters become
+numbers, numbers become vectors of two, and the grid eats them in pairs. To undo the
+meal, one must divide &mdash; but division does not exist here. Only the ring of
+twenty-six, and whatever plays the role of a reciprocal inside it.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" class="spec" data-kf="KF-5:Y">
+<tr><th colspan="2" align="left">ROTOR ALIGNMENT GRID (KEY MATRIX)</th></tr>
+<tr><td align="center"><b>3</b></td><td align="center"><b>3</b></td></tr>
+<tr><td align="center"><b>2</b></td><td align="center"><b>5</b></td></tr>
+</table>
+
+<table border="1" cellpadding="6" cellspacing="0" class="spec">
+<tr><th colspan="2" align="left">ENGINE SPECIFICATION</th></tr>
+<tr><td>ALPHABET RING</td><td>A=0, B=1, &hellip; Z=25. All arithmetic mod 26.</td></tr>
+<tr><td>BLOCK SIZE</td><td>2 letters, treated as a column vector, top letter first.</td></tr>
+<tr><td>OPERATION</td><td>grid &times; vector, mod 26. That is all it does.</td></tr>
+</table>
+
+<pre id="ct" class="cipher">NN QQ LP NI XW FE</pre>
+
+<p class="dim">The plaintext contains your answer and nothing else you need. Invert, or remain here.</p>
+<pre class="rule">------------------------------------------------------------------------</pre>
+<form class="dial" action="#" method="get">
+<label for="dial">ENTER WORD &#9656;</label>
+<input id="dial" name="word" type="text" autocomplete="off" spellcheck="false" maxlength="40">
+<button type="submit">TUNE</button>
+<span class="dialStatus"></span>
+</form>
+<p class="dim">CHAMBERS RECOVERED: <span id="progress">? / 8</span> &middot; <span class="blink">&#9646;</span></p>
+</body>
+</html>

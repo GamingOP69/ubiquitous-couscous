@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: CHAMBER 2 :: THE SAMPLER</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+<script src="js/sampler.js" defer></script>
+</head>
+<body class="term" data-chamber="2">
+<noscript><p class="warn">JAVASCRIPT REQUIRED TO MATERIALIZE THE ARTIFACT.</p></noscript>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // CHAMBER 2 OF 8 &mdash; THE SAMPLER</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+<pre class="rule">========================================================================</pre>
+
+<p class="lore">The boot word burned clean. Good. You are inside the terminal now.</p>
+<p class="lore">On the night of the shutdown, the operator ran the line sampler one last
+time and saved the frame as a Windows bitmap. He told his relief the picture was
+<i>&quot;clean &mdash; just carrier.&quot;</i> His relief kept the file anyway. Relief operators
+are paid to distrust certainty.</p>
+<p class="lore">The picture is clean. The <b>numbers</b> are not.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" class="spec">
+<tr><th colspan="2" align="left">ARTIFACT MANIFEST &mdash; carrier.bmp</th></tr>
+<tr><td>FORMAT</td><td>BMP, 24-bit, uncompressed</td></tr>
+<tr><td>RASTER</td><td>16 &times; 8 pixels</td></tr>
+<tr><td>RASTER ORIGIN</td><td>LOWER-LEFT (stored bottom row first, as the format demands)</td></tr>
+<tr><td>TRAILING DATA</td><td>present. the header is honest about almost everything.</td></tr>
+</table>
+
+<p>
+<img id="bmpPreview" width="256" height="128" border="1"
+     alt="carrier sample [KF-2:A]">
+</p>
+<p>
+<a id="dlBmp" href="#" download="carrier.bmp">[ DOWNLOAD carrier.bmp ]</a> &nbsp;
+<a id="rawBmp" href="#" target="_blank" rel="noopener">[ OPEN RAW ]</a>
+&nbsp; <span class="dim" id="bmpSize"></span>
+</p>
+
+<pre class="rule">------------------------------------------------------------------------</pre>
+<p class="dim">The sampler answers to no one. Extract what the eye cannot hold.</p>
+
+<form class="dial" action="#" method="get">
+<label for="dial">ENTER WORD &#9656;</label>
+<input id="dial" name="word" type="text" autocomplete="off" spellcheck="false" maxlength="40">
+<button type="submit">TUNE</button>
+<span class="dialStatus"></span>
+</form>
+
+<pre class="rule">========================================================================</pre>
+<p class="dim">CHAMBERS RECOVERED: <span id="progress">? / 8</span> &middot; <span class="blink">&#9646;</span></p>
+</body>
+</html>

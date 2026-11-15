@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-7 :: CHAMBER 8 :: THE SHUTDOWN WORD</title>
+<link rel="stylesheet" href="css/terminal.css">
+<script src="js/archive.js" defer></script>
+<script src="js/finale.js" defer></script>
+</head>
+<body class="term" data-chamber="8">
+<noscript><p class="warn">JAVASCRIPT REQUIRED FOR THE DIAL.</p></noscript>
+<table width="100%" cellpadding="4" cellspacing="0" border="0" class="hdr"><tr>
+<td><b>K-7 HALCYON // CHAMBER 8 OF 8 &mdash; THE SHUTDOWN WORD</b></td>
+<td align="right"><a href="index.html">[LOBBY]</a> <a href="#" id="sndToggle">[SOUND: ON]</a></td>
+</tr></table>
+<pre class="rule">========================================================================</pre>
+
+<p class="lore">691 over 2730. The irregular prime. The engine is satisfied.</p>
+<p class="lore">One lock remains. On the last night the operator split the station's name
+into <b>seven shards</b> and hid one in each chamber you have already passed &mdash; tagged
+<b>KF</b>, numbered 1 through 7, placed where only an inspector looks. You have walked
+through all of them. Go back. Collect what you carried past. Assemble the shards in
+numeric order: the result is a single seven-letter word.</p>
+<p class="lore">The final message below was written in rows beneath that word, one letter
+per column, then read out column by column in the order the alphabet assigns to the
+word's letters. The grid is square. The last cells are padding and mean nothing.
+Reverse the ritual.</p>
+
+<pre id="ct" class="cipher">HWIPNAE FREATIP TLSSATL EOLEDTE
+ASETSSZ NICIENZ IDNKHOS</pre>
+
+<table border="1" cellpadding="6" cellspacing="0" class="spec">
+<tr><th colspan="2" align="left">SHARD MANIFEST</th></tr>
+<tr><td>SHARDS REQUIRED</td><td>7 (KF-1 &hellip; KF-7)</td></tr>
+<tr><td>SHARD CHAMBERS VISITED</td><td><span id="shardCount">? / 7</span></td></tr>
+<tr><td>GRID</td><td>square. key length decides the columns.</td></tr>
+</table>
+
+<p class="dim">Console: <b>halcyon.manifest()</b> lists the chambers this terminal remembers you entering.</p>
+<pre class="rule">------------------------------------------------------------------------</pre>
+<form class="dial" action="#" method="get">
+<label for="dial">SPEAK THE FINAL WORD &#9656;</label>
+<input id="dial" name="word" type="text" autocomplete="off" spellcheck="false" maxlength="40">
+<button type="submit">TUNE</button>
+<span class="dialStatus"></span>
+</form>
+<p class="dim">CHAMBERS RECOVERED: <span id="progress">? / 8</span> &middot; <span class="blink">&#9646;</span></p>
+</body>
+</html>
